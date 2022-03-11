@@ -7,7 +7,7 @@ const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 const csrf = require('csurf');
 const flash = require('connect-flash');
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 const errorController = require('./controllers/error');
 const User = require('./models/user');
@@ -69,7 +69,9 @@ app.use(errorController.get404);
 mongoose
   .connect(MONGODB_URI)
   .then(result => {
-    app.listen(port);
+    app.listen(PORT,()=>{
+      console.log('server running');
+    });
   })
   .catch(err => {
     console.log(err);

@@ -7,4 +7,4 @@ Features:- User Login, Registration , Create Order, Place Order, Create new Prod
 Upcoming Feature:- Reset Password.
 
 
-URL :- [Visit APP](https://karan-ecommerce-app.herokuapp.com/)
+URL :- [Visit App](https://karan-ecommerce-app.herokuapp.com/)
